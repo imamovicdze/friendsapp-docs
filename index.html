@@ -329,7 +329,7 @@
 <p>The FriendsApp unifies multiple social interactions of any given social network under one REST API. We leverage HTTP responses codes to indicate different errors.</p>
 <h2 id="authentication">Authentication</h2>
 <p>Authenticate your requests using access token available to every user that is generated in the database. You can authenticate your requests using Authorization HTTP header or by sending access token in query parameters.</p>
-<p><code>curl -X POST -H "Content-Type: application/json" http://localhost:8181/api/messages?token_api={{token}}</code></p>
+<p><code>curl -X POST -H "Content-Type: application/json" http://localhost:8181/api/messages?api_token={{token}}</code></p>
 <h2 id="requests">Requests</h2>
 <p>All API requests are be made over HTTP with the base url <code>http://localhost:8181/api</code> currelntly localhost. API leverages appropriate HTTP verbs for requests.</p>
 <table>
@@ -430,7 +430,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong><code>token_api</code> has to be used for authentication on every single endpoint of the REST API.</strong></p>
+<p><strong><code>api_token</code> has to be used for authentication on every single endpoint of the REST API.</strong></p>
                 
                   
                 
